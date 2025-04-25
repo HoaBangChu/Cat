@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CatMemeShop</title>
+  </head>
+  <body>
+    <!-- Thẻ header là thẻ có ngữ nghĩa giúp trình đọc web hoặc trình  đọc màn hình hiểu đó là phần header của  webside -->
+    <!-- Định nghĩa trong phần header đầu trang trong header có thẻ main-content-->
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <!-- Thẻ body là thẻ cha ôm toàn bộ phần tử của header logo,nav.. -->
+        <div class="body">
+          <!-- logo -->
+          <img id="logo" src="/img/logo.png" alt="logo" />
+          <h3>CAT MEME SHOP</h3>
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li class="active">
+                <a href=""><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="active">
+                <a href="./shop.html" type="_self"
+                  ><i class="fa-solid fa-cart-shopping"></i>Shop</a
+                >
+              </li>
+              <li class="active">
+                <a href=""><i class="fa-solid fa-phone-volume"></i>Contact</a>
+              </li>
+              <li class="active">
+                <a href=""><i class="fa-regular fa-circle-play"></i>Video</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- button -->
+          <div class="action">
+            <a class="btn btn-signup" href="">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Phần hero là phần dưới header là phần lớn của trang web -->
+    <!-- Đây là phần thẻ main là thẻ có ngữ nghĩa giúp trình đọc web hoặc trình  đọc màn hình hiểu đó là phần chính của nội dung webside-->
+    <main>
+      <!-- Đặt class ôm ngoài cùng gọi là class hero bên trong sử dụng lại class main-contents: mục đích là để dùng chung độ rộng màn hìnhvà thuộc tính bên css-->
+      <div class="hero">
+        <div class="main-content">
+          <div class="body">
+            <!-- hero left là khối bên trái -->
+            <div class="media-block">
+              <img class="img" src="./img/meotanghoa.jpg" alt="Mèo tặng hoa" />
+              <div class="hero-summary">
+                <!-- item1 -->
+                <div class="item">
+                  <div class="icon">
+                    <img class="img2" src="./img/iconMeMe.jfif" alt="Meme" />
+                  </div>
+
+                  <div class="info">
+                    <p class="label">Meme</p>
+                    <p class="title">Rất nhiều meme mèo</p>
+                  </div>
+                </div>
+                <!-- item2 -->
+                <div class="item">
+                  <div class="icon">
+                    <img
+                      class="img2"
+                      src="./img/iconEchKhoc.jfif"
+                      alt="FrogCry"
+                    />
+                  </div>
+
+                  <div class="info">
+                    <p class="label">Buồn (cười)</p>
+                    <p class="title">Vãi cả Chu Bin</p>
+                  </div>
+                </div>
+                <!-- item3 -->
+                <div class="item">
+                  <div class="icon">
+                    <img
+                      class="img2"
+                      src="./img/FrogSigma.jfif"
+                      alt="FrogSigma"
+                    />
+                  </div>
+
+                  <div class="info">
+                    <p class="label">Uy tín hàng đầu</p>
+                    <p class="title">Belive me</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- hero right là khối bên phải -->
+            <div class="content-block">
+              <h1 class="heading">Mèo Hài - Cười Vỡ Bụng!</h1>
+              <p class="discript">
+                Meme mèo cười lăn cười bò, Click xem liền tay!
+              </p>
+              <div class="noidung">
+                <a href="" class="btn btnxemngay"
+                  ><img
+                    class="img2"
+                    src="./img/chuotKhoc.jfif"
+                    alt="Chuột khóc"
+                  />Ấn Vào Em
+                </a>
+                <a href="" class="btn btnDungAn"
+                  ><img
+                    class="img2"
+                    src="./img/click.jfif"
+                    alt="Chó click"
+                  />Đừng Ấn Em</a
+                >
+
+                <!-- Phần cuối của hero right -->
+              </div>
+              <p class="discript">Cứ Ấn Bừa Thử Xem Sao!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

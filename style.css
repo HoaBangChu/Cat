@@ -26,7 +26,12 @@ a {
 /* code cho phần nút bấm */
 .btn {
   color: white;
-  background: black;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
   border-radius: 25px;
   text-align: center;
   font-size: 1.3rem;
@@ -100,15 +105,6 @@ như vậy tác động vào body của header thì chỉ tác động vào head
 }
 
 /* code cho nút btnsign-up của lớp header chỉ có duy nhất 1 header  */
-.header .btn-signup {
-  /* background-color: background-color: #4158D0; */
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-}
 
 .header .action {
   margin-left: 49px;
@@ -119,4 +115,132 @@ như vậy tác động vào body của header thì chỉ tác động vào head
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 1px 0px #65d92f;
   margin-left: 1%;
+}
+
+/* ================Code phần Main============ */
+.hero {
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  padding: 56px 0 340px;
+}
+
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .content-block {
+  width: 52%;
+}
+
+/* =================Khối bên trái ================= */
+.hero .media-block .img {
+  height: 500px;
+  width: 400px;
+  border-radius: 26px;
+  object-fit: cover;
+  margin-top: 5%;
+  margin-left: 100px;
+}
+
+/* code cho phần 3 icon và khối cha nó là media-block nên phải đặt relative ở cha ms dùng đc absolute */
+.hero .hero-summary {
+  width: 250px;
+  position: absolute;
+  bottom: 48px;
+  right: 2%;
+  background-image: linear-gradient(
+    43deg,
+    #848bab 0%,
+    #c850c0 46%,
+    #a39c90 100%
+  );
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero-summary .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .img2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  margin-left: 15px;
+  /* margin: auto;
+  justify-content: center;
+  align-items: center; */
+}
+
+.hero-summary .info {
+  margin-left: 10px;
+}
+
+.hero-summary .label {
+  line-height: 1.86;
+  color: aqua;
+}
+
+.hero-summary .title {
+  color: rgb(59, 247, 21);
+}
+
+/* =============khối bên phải========== */
+.hero .content-block {
+  margin-left: 100px;
+  margin-top: 64px;
+}
+.hero .heading {
+  font-family: sans-serif;
+  font-size: 3.4rem;
+  line-height: 1.4;
+}
+
+.hero .discript {
+  line-height: 1.4;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.hero .btnDungAn {
+  width: 180px;
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .noidung {
+  display: flex;
+}
+.noidung .img2 {
+  margin-right: 15px;
+}
+.hero .btnxemngay {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+.btn:active {
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 }
