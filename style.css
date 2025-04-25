@@ -1,0 +1,122 @@
+#logo {
+  width: 5%;
+  border-radius: 25px;
+}
+
+/*  Khôi phục lại cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.3rem;
+}
+
+/* =====================Thuộc tính dùng chung================ */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1750px;
+  /* 2 loại margin auto này để căn giữa  */
+  margin-left: auto;
+  margin-right: auto;
+  /* Khi kéo trình duyệt nhỏ lại có thể làm logo sát lề và mất đi home, ....
+  ta dùng hàm calc(100% - 48px) nghĩa là 2 bên khi kéo nhỏ cách 24px không mất nội dung thanh nav */
+  max-width: calc(100% - 48px);
+}
+
+/* code cho phần nút bấm */
+.btn {
+  color: white;
+  background: black;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  /* thêm padding để nới rộng ô sign up trái phải 16px trên dưới 11px inline block xem bài 51*/
+  /* padding: 11px 16px; */
+  /* thêm độ rộng nút bấm chung */
+  /* min width xác định chiều rộng tối thiểu */
+  min-width: 110px;
+  /* thêm inliine block để padding */
+  display: inline-block;
+  padding: 0 16px;
+  /* Xác định chiều cao co nút bấm */
+  line-height: 50px;
+}
+
+/* =====================Thẻ header========================== */
+/* Code cho class body là con của header
+Tác động vào class body là thẻ con của class header */
+/* vì sau có thể có thêm class body nên ta viết tường minh để nói rằng tác động vào class body của class header là duy nhất
+như vậy tác động vào body của header thì chỉ tác động vào header */
+.header .body {
+  display: flex;
+  align-items: center;
+  /* padding trên 36px trái phải là 0  dưới 8px */
+  padding: 36px 0px 8px;
+}
+
+/* Đổi màu khối header */
+.header {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+/* Tác động vào fixed của class header */
+
+/* Tác động vào thẻ ul con của nav */
+.nav ul {
+  display: flex;
+}
+/* Tác động vào class nav và kéo toàn bộ con của nó theo */
+.nav {
+  /* đẩy toàn bộ nav về cuối thanh bên phải */
+  margin-left: auto;
+}
+
+/* Tác động vào thẻ a của khối nav vì sau còn nhiều thẻ a */
+.nav a {
+  color: rgb(41, 49, 152);
+  /* dùng padding hoặc margin để căn phần tử */
+  padding: 8px 21px;
+}
+
+.nav a:hover {
+  /* khi di chuột vào thẻ a của class nav thì nó to do font weight và in đậm */
+  color: rgb(11, 10, 10);
+  text-decoration: underline;
+  /* font-weight: 600; */
+  /* Tạo bóng đổ sang phải 1px  */
+  text-shadow: 1px 0 0 rgb(27, 211, 110);
+}
+
+/* Tác động vào thẻ a nằm trong class avtive thẻ li và nằm trong class nav */
+.nav li.active a:active {
+  color: red;
+}
+
+/* code cho nút btnsign-up của lớp header chỉ có duy nhất 1 header  */
+.header .btn-signup {
+  /* background-color: background-color: #4158D0; */
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+.header .body h3 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 0px #65d92f;
+  margin-left: 1%;
+}
